@@ -20,8 +20,8 @@ class MainActivity : AppCompatActivity() {
 
         changeFragment(homeFragment)
 
-        findViewById<BottomNavigationView>(R.id.bottom_nav).setOnClickListener { item ->
-            when(item.id){
+        findViewById<BottomNavigationView>(R.id.bottom_nav).setOnItemSelectedListener { item ->
+            when(item.itemId){
                 R.id.ic_home ->{
                     changeFragment(homeFragment)
                     true
